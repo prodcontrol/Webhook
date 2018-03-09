@@ -34,10 +34,12 @@ restService.post("/test", function(req, res) {
 }
 
   return res.json({
-    speech: speech,
-    displayText: speech,
-    source: "webhook-echo-sample"
-  });
+    speech: "speech",
+    displayText: "speech",
+    source: "webhook-echo-sample",
+    data: {
+      slack: display
+    }
 });
 
 
