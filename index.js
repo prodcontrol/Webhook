@@ -13,6 +13,34 @@ restService.use(
 
 restService.use(bodyParser.json());
 
+restService.post("/test", function(req, res) {
+	var display = "";
+	var speech =
+    req.body.result &&
+    req.body.result.parameters &&
+    req.body.result.parameters.echoText
+      ? req.body.result.parameters.echoText
+      : "Seems like some problem. Speak again.";
+	  
+  switch(speech) {
+    case "1":
+        display = "1 entered.";
+        break;
+    case "2":
+        display = "2 entered.";
+        break;
+    default:
+        display = "Default entered.";
+}
+
+  return res.json({
+    speech: display,
+    displayText: display,
+    source: "webhook-echo-sample"
+  });
+});
+
+
 restService.post("/echo", function(req, res) {
   var speech =
     req.body.result &&
