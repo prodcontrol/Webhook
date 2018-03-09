@@ -34,8 +34,8 @@ restService.post("/test", function(req, res) {
 }
 
   return res.json({
-    speech: display,
-    displayText: display,
+    speech: speech,
+    displayText: speech,
     source: "webhook-echo-sample"
   });
 });
