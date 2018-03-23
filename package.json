@@ -1,7 +1,7 @@
 {
-  "name": "Webhook",
+  "name": "webhook",
   "version": "1.0.0",
-  "description": "Webhook",
+  "description": "webhook",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
