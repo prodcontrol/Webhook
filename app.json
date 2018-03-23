@@ -1,6 +1,6 @@
 {
-  "name": "Webhook",
-  "description": "Webhook",
+  "name": "webhook",
+  "description": "webhook",
   "repository": "https://github.com/prodcontrol/Webhook.git",
   "keywords": ["api.ai", "dialogflow", "natural language"]
 }
